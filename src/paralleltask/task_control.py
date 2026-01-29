@@ -141,7 +141,7 @@ class Task(object):
 				pmkdir(subtask_dir)
 				subtask = "#!%s\nset -xveo pipefail\nhostname\ncd %s\n" % (self.shell, subtask_dir)
 				for task in tasks[i]:
-					subtask += "( %s %s )\n" % (time, task)
+					subtask += "%s %s\n" % (time, task)
 				subtask += "touch %s/%s.done\n" % (subtask_dir, subtask_file)
 				with open(subtask_dir + '/' + subtask_file, 'w') as OUT:
 					print (subtask, file=OUT)
