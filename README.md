@@ -1,3 +1,7 @@
+# Modification in this repository
+
+- Removed the brackets when generating subtask commands in task_control.py script.
+
 # Paralleltask
 Paralleltask is a simple and lightweight parallel task engine. It can launch a given number of tasks from a batch of independent tasks, and keep this number of running tasks until all tasks are completed.
 
